@@ -8,7 +8,7 @@ Release:	4
 Summary:	Concise attribute rewriting
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/HTML-RewriteAttributes/
+Url:		https://search.cpan.org/dist/HTML-RewriteAttributes/
 Source0:	http://www.cpan.org/authors/id/S/SA/SARTAK/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
