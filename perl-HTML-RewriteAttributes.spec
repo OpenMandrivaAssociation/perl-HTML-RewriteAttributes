@@ -1,15 +1,15 @@
 %define upstream_name    HTML-RewriteAttributes
-%define upstream_version 0.04
+%define upstream_version 0.06
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Concise attribute rewriting
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/HTML-RewriteAttributes/
-Source0:	http://www.cpan.org/authors/id/S/SA/SARTAK/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/HTML-RewriteAttributes
+Source0:	https://cpan.metacpan.org/authors/id/B/BP/BPS/HTML-RewriteAttributes-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
