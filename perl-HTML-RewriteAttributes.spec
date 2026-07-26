@@ -1,15 +1,13 @@
 %define upstream_name    HTML-RewriteAttributes
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.06
+Release:	2
 
 Summary:	Concise attribute rewriting
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/HTML-RewriteAttributes
-Source0:	https://cpan.metacpan.org/authors/id/B/BP/BPS/HTML-RewriteAttributes-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BP/BPS/HTML-RewriteAttributes-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ HTML::RewriteAttributes is designed for simple yet powerful HTML attribute
 rewriting.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -56,9 +54,7 @@ chmod -R u+w %{buildroot}/*
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
 + Revision: 403258
-- rebuild using %%perl_convert_version
-
-* Thu Dec 04 2008 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdv2009.1
+- rebuild using %0.06 Thu Dec 04 2008 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdv2009.1
 + Revision: 309994
 - import perl-HTML-RewriteAttributes
 
